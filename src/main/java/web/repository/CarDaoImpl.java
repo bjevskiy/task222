@@ -10,11 +10,13 @@ import java.util.ArrayList;
 public class CarDaoImpl implements CarDao {
     public static final List<Car> cars = new ArrayList<>();
 
-    static {
+    public static List<Car> getAllCars(){
         cars.add(new Car("Car 1", 55, 34));
         cars.add(new Car("Car 2", 11, 48));
         cars.add(new Car("Car 3", -23, -3));
         cars.add(new Car("Car 4", 5, 53));
         cars.add(new Car("Car 5", 35, 0));
+        List <Car> allCarsList = cars;
+        return allCarsList;
     }
 }

@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class CarServiceImpl implements CarService {
     private final CarDao carDao;
 
-    private List<Car> cars = CarDaoImpl.cars;
+    private List<Car> cars = CarDaoImpl.getAllCars();
 
     @Autowired
     public CarServiceImpl(CarDao carDao) {
